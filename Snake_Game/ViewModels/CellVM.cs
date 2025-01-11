@@ -14,7 +14,7 @@ namespace Snake_Game.ViewModels
         public int Row { get;}
         public int Column { get;}
 
-        private CellType _CellType;
+        private CellType _CellType = CellType.None;
 
         public CellType CellType
         {
@@ -25,11 +25,10 @@ namespace Snake_Game.ViewModels
                 RaisePropertyChanged(nameof(CellType));
             }
         }
-        public CellVM(int row, int column, CellType celltype)
+        public CellVM(int row, int column)
         {
             Row = row;
             Column = column;
-            CellType = celltype;
         }
 
     }

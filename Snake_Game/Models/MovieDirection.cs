@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Snake_Game.Models
 {
-    internal class MovieDirection
+    internal enum MovieDirection
     {
+        Left,
+        Right,
+        Up,
+        Down
     }
 }
